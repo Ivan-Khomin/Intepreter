@@ -74,6 +74,18 @@ public class SimpleLexer implements Lexer {
             tokens.add(new Token(TokenType.STRING, value));
         } else if (value.equalsIgnoreCase(TokenType.INT.name())) {
             tokens.add(new Token(TokenType.INT, value));
+        } else if (value.equalsIgnoreCase(TokenType.DOUBLE.name())) {
+            tokens.add(new Token(TokenType.DOUBLE, value));
+        } else if (value.equalsIgnoreCase(TokenType.FLOAT.name())) {
+            tokens.add(new Token(TokenType.FLOAT, value));
+        } else if (value.equalsIgnoreCase(TokenType.CHAR.name())) {
+            tokens.add(new Token(TokenType.CHAR, value));
+        } else if (value.equalsIgnoreCase(TokenType.BYTE.name())) {
+            tokens.add(new Token(TokenType.BYTE, value));
+        } else if (value.equalsIgnoreCase(TokenType.CONST.name())) {
+            tokens.add(new Token(TokenType.CONST, value));
+        } else if (value.equalsIgnoreCase(TokenType.NULL.name())) {
+            tokens.add(new Token(TokenType.NULL, value));
         } else {
             tokens.add(new Token(TokenType.ID, value));
         }
